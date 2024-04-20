@@ -1,0 +1,161 @@
+{
+    "Title": "Into the Forest Paths",
+    "Credits": "Created by Michael Wong (mipwong@ucsc.edu).",
+    "InitialLocation": "Home",
+    "Locations": {
+        "Home": {
+            "Body": "Your eyes are closed. All you can see is a jumble of unclear thoughts as you lie still at your bedroom floor. You decide to reach out to open the door.",
+            "Choices": [
+                {
+                    "Text": "Reach out",
+                    "Target": "Train Station"
+                }
+            ]
+        },
+        "Train Station": {
+            "Body": "Suddenly, you find your parents outside your bedroom and they seem to kidnap you. When you awake, you find yourself in a train, looking outside the window to see your parents mouthing out the words: 'this is good for you'. All you can do is ride the train.",
+            "Choices": [
+                {
+                    "Text": "Ride the train.",
+                    "Target": "Train"
+                }
+            ]
+        },
+        "Train": {
+            "Body": "You ride the train. Suddenly, the view through the windows, along with the walls begin to warp. The reality shaking nature of this seems to knock you out.",
+            "Choices": [
+                {
+                    "Text": "Get knocked out",
+                    "Target": "Divide in the Forest Path"
+                }
+            ]
+        },
+        "Divide in the Forest Path": {
+            "Body": "You open your eyes to find yourself in a forest. There's a divide in the path ahead of you. Which will you take?",
+            "Choices": [
+                {
+                    "Text": "Shadowy Marsh Path",
+                    "Target": "Shadowy Marsh Path"
+                },
+                {
+                    "Text": "Vibrant Forest Floor",
+                    "Target": "Vibrant Forest Floor"
+                }
+            ]
+        },
+        "Shadowy Marsh Path": {
+            "Body": "You enter the Shadowy Marsh Path. It's extremely dark. As you walk further, your feet sinks in deeper into the ground with each further step.",
+            "Choices": [
+                {
+                    "Text": "Deep into the Shadowy Marsh",
+                    "Target": "Deep into the Shadowy Marsh"
+                }
+            ]
+        },
+        "Deep into the Shadowy Marsh": {
+            "Body": "You enter deep into the shadowy marsh. There you find a crevice with a feint light shining through. You decide to squeeze through. With all your might, nearly crushing your chest you push through to find something rather interesting.",
+            "Interactions": [
+                {
+                    "Text": "Pick up Radiant Mushroom",
+                    "Interaction": "You pick up the radiant mushroom. It has the power to reveal roses among thorns.",
+                    "KeyMechanism": "Radiant Mushroom"
+                }
+            ],
+            "Choices": [
+                {
+                    "Text": "Move on",
+                    "Target": "End of the Marsh Path"
+                }
+            ]
+        },
+        "End of the Marsh Path": {
+            "Body": "You reach the end of the shadowy marsh path. All that's left is a wall full of moss. Not knowing what to do, you close your eyes and reach out.",
+            "Choices": [
+                {
+                    "Text": "Reach out",
+                    "Target": "Divide in the Forest Path"
+                }
+            ]
+        },
+        "Vibrant Forest Floor": {
+            "Body": "You enter the vibrant forest floor. It's full of a diverse range of flowers that decorate the surroundings in a rainbow of colors. You decide to explore it further.",
+            "Choices": [
+                {
+                    "Text": "Explore further",
+                    "Target": "Deep into the Vibrant Forest Floor"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Divide in the Forest Path"
+                }
+            ]
+        },
+        "Deep into the Vibrant Forest Floor": {
+            "Body": "You go deeper into the vibrant forest floor. You find a strange looking flower. What will you do?",
+            "Interactions": [
+                {
+                    "Text": "Talk to it",
+                    "Interaction": "The strange looking flower states that it echoes the voices of what it once heard. To keep it from copying your voice, you decide not to say anything."
+                }
+            ],
+            "Choices": [
+                {
+                    "Text": "Move on",
+                    "Target": "Deeper into the Vibrant Forest Floor"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Vibrant Forest Floor"
+                }
+            ]
+        },
+        "Deeper into the Vibrant Forest Floor": {
+            "Body": "You move on only to find another strange looking flower.",
+            "Interactions": [
+                {
+                    "Text": "Talk to it",
+                    "Interaction": "For flowers to bloom, for freedom to be achieved, one must find the light that radiates through the darkness."
+                }
+            ],
+            "Choices": [
+                {
+                    "Text": "Move on",
+                    "Target": "Wall of Thorns"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Deep into the Vibrant Forest Floor"
+                }
+            ]
+        },
+        "Wall of Thorns": {
+            "Body": "You eventually reach a wall of thorns. It appears to be covering the flowers that used to bloom beneath it.",
+            "Interactions":[
+                {
+                    "Lock": "Radiant Mushroom",
+                    "Hidden": "Use the radiant mushroom to free the flowers beneath the thorns",
+                    "Target": "Home Part 2"
+                }
+            ],
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Deeper into the Vibrant Forest Floor"
+                }
+            ]
+        },
+        "Home Part 2":{
+            "Body": "Using the radient mushroom, you clear a path to that opens the door. When you step in, you find yourself back in your room where you were once lying.",
+            "Choices": [
+                {
+                    "Text": "Beyond",
+                    "Target": "Beyond"
+                }
+            ]
+        },
+
+        "Beyond": {
+            "Body": "You decide to open your eyes, and go beyond to explore the unkown."
+        }
+    }
+}
